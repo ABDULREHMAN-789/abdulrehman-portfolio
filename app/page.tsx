@@ -3,14 +3,29 @@ import HomePage from "./HomePage"
 // import { ref, get } from "firebase/database"
 // import { database } from "@/firebase"
 
+import data from "@/data.json"
+
 async function getData() {
+  const dbUrl = process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL
 
-  // return await (await get(ref(database))).val()
+  if (!dbUrl) {
+    return data
+  }
 
-  const DB_URL = process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL + '/.json'
-  const res = await fetch(DB_URL, { cache: 'no-store' })
-  const data = res.json()
-  return data
+  try {
+    const cleanUrl = dbUrl.endsWith('/') ? dbUrl.slice(0, -1) : dbUrl
+    const res = await fetch(`${cleanUrl}/.json`, { cache: 'no-store' })
+
+    if (!res.ok) {
+      console.warn(`Failed to fetch data from Firebase (${res.status} ${res.statusText}). Using local data.json fallback.`)
+      return data
+    }
+
+    return await res.json()
+  } catch (error) {
+    console.warn("Failed to fetch data from Firebase. Using local data.json fallback.", error)
+    return data
+  }
 }
 
 export default async function page() {

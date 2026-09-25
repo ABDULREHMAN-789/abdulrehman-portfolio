@@ -1,51 +1,77 @@
 {
   "main": {
-    "name": "Jhon Doe",
-    "shortDesc": "I focus on developing user-friendly web applications that meet the client's requirements, with attention to detail, scalability, and performance.",
+    "name": "Muhammad Abdul Rehman",
+    "shortDesc": "Results-driven Flutter Developer and Full Stack Mobile Engineer with hands-on experience building cross-platform mobile and web applications, scalable RESTful APIs, and AI-integrated solutions. Proficient in Flutter, Dart, Firebase, Node.js, Express.js, and MongoDB. Demonstrated ability to deliver production-ready applications following Clean Architecture, feature-first project structure, and industry best practices.",
     "titles": [
-      "Frontend Development",
-      "Backend Development",
-      "App Development"
+      "Full Stack Mobile Engineer",
+      "Flutter Developer",
+      "Node.js Developer",
+      "AI & Mobile App Developer"
     ],
-    "heroImage": "https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg",
+    "heroImage": "/profile.png",
     "techStackImages": [
-      "https://img.icons8.com/color/144/000000/material-ui.png",
-      "https://img.icons8.com/color/144/000000/html-5--v1.png",
-      "https://img.icons8.com/color/144/000000/redux.png",
-      "https://img.icons8.com/color/144/000000/chakra-ui.png"
+      "https://img.icons8.com/color/144/null/flutter.png",
+      "https://img.icons8.com/color/144/null/dart.png",
+      "https://img.icons8.com/color/144/null/nodejs.png",
+      "https://img.icons8.com/color/144/null/firebase.png"
     ]
   },
   "about": {
-    "aboutImage": "https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg",
+    "aboutImage": "/profile.png",
     "aboutImageCaption": "< I build stuff 🚀/>",
-    "title": "Full Stack Developer",
-    "about": "I am a Full-Stack developer based in Pune, India. I'm an Information Technology undergraduate from SPPU, and my journey in web development began during my first year of college. I'm passionate about creating beautiful, functional, and user-friendly websites and applications, and I'm constantly pushing myself to learn and grow as a developer. Love building full-stack clones and side projects.",
+    "title": "Full Stack Mobile Engineer | Flutter & Node.js Developer",
+    "location": "Bahawalpur, Pakistan",
+    "about": "Results-driven Flutter Developer and Full Stack Mobile Engineer with hands-on experience building cross-platform mobile and web applications, scalable RESTful APIs, and AI-integrated solutions. Proficient in Flutter, Dart, Firebase, Node.js, Express.js, and MongoDB. Demonstrated ability to deliver production-ready applications following Clean Architecture, feature-first project structure, and industry best practices.",
     "callUrl": "",
-    "resumeUrl": ""
+    "resumeUrl": "/Muhammad_Abdul_Rehman_Flutter-ats.pdf"
   },
   "socials": [
     {
+      "name": "LinkedIn",
       "icon": "FaLinkedin",
-      "link": "https://www.linkedin.com/in/jhon-doe"
+      "link": "https://www.linkedin.com/in/abdul-rehman-flutter-and-backend"
     },
     {
+      "name": "GitHub",
       "icon": "FaGithub",
-      "link": "https://github.com/jhon-doe"
+      "link": "https://github.com/ABDULREHMAN-789"
     },
     {
-      "icon": "FaInstagram",
-      "link": "https://www.instagram.com/jhondoe"
-    },
-    {
-      "icon": "FaTwitter",
-      "link": "https://twitter.com/jhondoe"
+      "name": "LeetCode",
+      "icon": "SiLeetcode",
+      "link": "https://leetcode.com/your-username"
     }
   ],
   "skills": [
     {
-      "name": "JavaScript",
-      "image": "https://img.icons8.com/color/144/null/javascript--v1.png",
-      "category": "Frontend"
+      "name": "Flutter",
+      "image": "https://img.icons8.com/color/144/null/flutter.png",
+      "category": "Mobile & Frontend"
+    },
+    {
+      "name": "Dart",
+      "image": "https://img.icons8.com/color/144/null/dart.png",
+      "category": "Mobile & Frontend"
+    },
+    {
+      "name": "Node JS",
+      "image": "https://img.icons8.com/color/144/null/nodejs.png",
+      "category": "Backend"
+    },
+    {
+      "name": "Express JS",
+      "image": "https://img.icons8.com/ios/150/null/express-js.png",
+      "category": "Backend"
+    },
+    {
+      "name": "MongoDB",
+      "image": "https://img.icons8.com/color/144/null/mongodb.png",
+      "category": "Backend"
+    },
+    {
+      "name": "PostgreSQL",
+      "image": "https://img.icons8.com/color/144/null/postgreesql.png",
+      "category": "Backend"
     },
     {
       "name": "Firebase",
@@ -53,17 +79,43 @@
       "category": "Backend"
     },
     {
-      "name": "GitHub",
-      "image": "https://img.icons8.com/material-outlined/96/null/github.png",
+      "name": "Git",
+      "image": "https://img.icons8.com/color/144/null/git.png",
       "category": "Tools"
+    },
+    {
+      "name": "Tailwind",
+      "image": "https://img.icons8.com/color/144/null/tailwindcss.png",
+      "category": "Mobile & Frontend"
+    },
+    {
+      "name": "MaterialUI",
+      "image": "https://img.icons8.com/color/144/000000/material-ui.png",
+      "category": "Mobile & Frontend"
+    },
+    {
+      "name": "Javascript",
+      "image": "https://img.icons8.com/color/144/null/javascript--v1.png",
+      "category": "Mobile & Frontend"
     }
   ],
   "projects": [
     {
-      "name": "Project Title",
-      "techstack": "HTML5, CSS3, JavaScript, jQuery",
-      "category": "MERN Stack",
-      "image": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210114225740/10-Best-Web-Development-Project-Ideas-For-Beginners-in-2021.png",
+      "id": 1,
+      "name": "PatientPathly - Clinic Management System",
+      "description": "A comprehensive clinic management software. Implemented database connections, user tables, and integrated backend endpoints for managing clinic operations seamlessly.",
+      "tools": [
+        "Flutter",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL"
+      ],
+      "techstack": "Flutter, Node.js, Express.js, PostgreSQL",
+      "role": "Full Stack Mobile Developer",
+      "category": "Full Stack",
+      "code": "",
+      "demo": "",
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
       "links": {
         "code": "",
         "video": "",
@@ -71,10 +123,21 @@
       }
     },
     {
-      "name": "Project Title",
-      "techstack": "Flutter, Dart, Firebase",
-      "category": "Flutter",
-      "image": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210114225740/10-Best-Web-Development-Project-Ideas-For-Beginners-in-2021.png",
+      "id": 2,
+      "name": "Medical & Orthopedic Store POS",
+      "description": "Designed and developed a multi-module store management platform handling inventory, batch management, expiry tracking (FEFO), purchases, and sales. Engineered to support 3,000+ products with PDF invoice generation.",
+      "tools": [
+        "Flutter Web",
+        "Firebase",
+        "Riverpod",
+        "Clean Architecture"
+      ],
+      "techstack": "Flutter Web, Firebase, Riverpod, Clean Architecture",
+      "role": "Full Stack Mobile Engineer",
+      "category": "Mobile & Web",
+      "code": "",
+      "demo": "",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
       "links": {
         "code": "",
         "video": "",
@@ -82,10 +145,110 @@
       }
     },
     {
-      "name": "Project Title",
-      "techstack": "PHP, MySQL, HTML5, CSS3, Bootstrap, JavaScript",
-      "category": "LAMP Stack",
-      "image": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210114225740/10-Best-Web-Development-Project-Ideas-For-Beginners-in-2021.png",
+      "id": 3,
+      "name": "Job Seeker Platform Backend",
+      "description": "Designed a scalable backend for a Job Seeker web application. Built schemas for Job, User, and Application models. Implemented advanced JWT authentication, authorization, role-based access, and resume file uploads.",
+      "tools": [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "JWT"
+      ],
+      "techstack": "Node.js, Express.js, MongoDB, Mongoose, JWT",
+      "role": "Backend Developer",
+      "category": "Backend",
+      "code": "",
+      "demo": "",
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80",
+      "links": {
+        "code": "",
+        "video": "",
+        "visit": ""
+      }
+    },
+    {
+      "id": 4,
+      "name": "Medicine Reminder Offline App",
+      "description": "Developed a production-ready offline-first medication management app. Engineered an intelligent scheduling system supporting custom reminder times, missed-dose tracking, and calendar-based history with zero internet dependency.",
+      "tools": [
+        "Flutter",
+        "Riverpod",
+        "Isar Database",
+        "Material Design 3"
+      ],
+      "techstack": "Flutter, Riverpod, Isar Database, Material Design 3",
+      "role": "Mobile App Developer",
+      "category": "Mobile App",
+      "code": "",
+      "demo": "",
+      "image": "https://images.unsplash.com/photo-1584308666744-24d5e477415d?w=800&q=80",
+      "links": {
+        "code": "",
+        "video": "",
+        "visit": ""
+      }
+    },
+    {
+      "id": 5,
+      "name": "COVID-19 Live Tracker",
+      "description": "Built a data-driven mobile application that displays live COVID-19 statistics (cases, recoveries, deaths) globally. Integrated public REST APIs for real-time updates and data visualization.",
+      "tools": [
+        "Flutter",
+        "Provider",
+        "REST API",
+        "Clean Architecture"
+      ],
+      "techstack": "Flutter, Provider, REST API, Clean Architecture",
+      "role": "Mobile App Developer",
+      "category": "Mobile App",
+      "code": "",
+      "demo": "",
+      "image": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?w=800&q=80",
+      "links": {
+        "code": "",
+        "video": "",
+        "visit": ""
+      }
+    },
+    {
+      "id": 6,
+      "name": "Real-Time Weather App",
+      "description": "Developed a dynamic weather forecasting application. Implemented location-based weather fetching, 7-day forecasts, and dynamic UI themes based on current weather conditions.",
+      "tools": [
+        "Flutter",
+        "Dart",
+        "OpenWeather API",
+        "Geolocation"
+      ],
+      "techstack": "Flutter, Dart, OpenWeather API, Geolocation",
+      "role": "Flutter Developer",
+      "category": "Mobile App",
+      "code": "",
+      "demo": "",
+      "image": "https://images.unsplash.com/photo-1561484930-998b6a7b22e8?w=800&q=80",
+      "links": {
+        "code": "",
+        "video": "",
+        "visit": ""
+      }
+    },
+    {
+      "id": 7,
+      "name": "IQ POS - Point of Sale System",
+      "description": "A robust Point of Sale (POS) application designed for seamless retail and checkout management. Features include real-time inventory tracking, daily sales reporting, secure payment flows, and digital invoice generation.",
+      "tools": [
+        "Flutter",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL"
+      ],
+      "techstack": "Flutter, Node.js, Express.js, PostgreSQL",
+      "role": "Full Stack Developer",
+      "category": "Full Stack",
+      "code": "",
+      "demo": "",
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
       "links": {
         "code": "",
         "video": "",
@@ -95,41 +258,35 @@
   ],
   "educations": [
     {
-      "institute": "XYZ School | CBSE",
-      "degree": "HSC Science",
-      "duration": "2014 - 2016"
-    },
-    {
-      "institute": "XYZ College Of Engineering",
-      "degree": "B.Tech CSE",
-      "duration": "2016 - 2020",
-      "desc": [
-        "Pursuing IT Engineering course from ABC University",
-        "Worked on web application development using HTML, CSS, and JavaScript, designing a database system using SQL",
-        "Familiar with software development methodologies and project management practices, including Agile and Waterfall methodologies."
-      ]
+      "id": 1,
+      "title": "Bachelor of Software Engineering",
+      "degree": "Bachelor of Software Engineering",
+      "duration": "(Completed 2026)",
+      "institution": "The Islamia University of Bahawalpur",
+      "institute": "The Islamia University of Bahawalpur"
     }
   ],
   "experiences": [
     {
-      "company": "ABC Tech Solutions",
-      "position": "Web Developer",
-      "duration": "2020 -2022",
-      "desc": [
-        "Assisted with design and development of project.",
-        "Worked on building the product from scratch and built multiple dashboards.",
-        "Skills: HTML · CSS · JavaScript · TailwindCSS · ReactJS · NodeJS · MySQL · REST APIs"
-      ]
+      "id": 1,
+      "title": "Mobile Application Developer",
+      "position": "Mobile Application Developer",
+      "company": "IQ Center Bahawalpur",
+      "duration": "(Aug 2026 - Present)"
     },
     {
-      "company": "XYZ Tech Solutions",
-      "position": "Web Developer",
-      "duration": "2022 - present",
-      "desc": [
-        "Assisted with design and development of project.",
-        "Worked on building the product from scratch and built multiple dashboards.",
-        "Skills: HTML · CSS · JavaScript · TailwindCSS · ReactJS · NodeJS · MySQL · REST APIs"
-      ]
+      "id": 2,
+      "title": "Software Engineering Intern (Backend)",
+      "position": "Software Engineering Intern (Backend)",
+      "company": "Algotix AI",
+      "duration": "(May 2025 - Mar 2026)"
+    },
+    {
+      "id": 3,
+      "title": "Flutter Developer",
+      "position": "Flutter Developer",
+      "company": "Xtreem Tech",
+      "duration": "(Jan 2024 - Mar 2025)"
     }
   ]
 }
