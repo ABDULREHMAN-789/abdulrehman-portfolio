@@ -5,7 +5,6 @@ import { Link as ScrollLink } from 'react-scroll'
 import Typewriter from 'typewriter-effect';
 import { IoIosArrowForward } from 'react-icons/io';
 import { FaDownload, FaLinkedin, FaGithub, FaPhoneAlt } from 'react-icons/fa';
-import wavingHand from '@/public/waving-hand.gif';
 import { main } from '@/types/main';
 import { personalData } from '@/utils/data/personal-data';
 
@@ -56,15 +55,14 @@ const Hero = ({ mainData }: HeroProps) => {
                         <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Available for opportunities</span>
                     </div>
 
-                    <div className="flex items-center gap-1">
-                        <Image unoptimized={true} alt='waving-hand' width={30} height={30} src={wavingHand} />
-                        <p className="text-lg md:text-xl mt-2 md:mt-1.5">
-                            Hey
+                    <div>
+                        <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 font-medium mb-1">
+                            Hello, I&apos;m
                         </p>
+                        <h1 className="text-4xl md:text-6xl font-bold relative">
+                            {name}
+                        </h1>
                     </div>
-                    <h1 className="text-4xl md:text-6xl font-bold relative">
-                        I&apos;m {name}
-                    </h1>
                     <div className="flex flex-row items-start md:items-center gap-1.5">
                         <h2 className="text-lg md:text-2xl">
                             I am into

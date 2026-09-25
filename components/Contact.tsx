@@ -72,14 +72,14 @@ const Contact = () => {
                 </div>
                 <div className="flex-1 w-full">
                     <h3 className="text-2xl">Get in touch</h3>
-                    <p className="text-gray-400 mb-4 text-sm md:text-base">My inbox is always open! 💌 Whether you&apos;ve got a burning question or want to drop a friendly &quot;hello&quot;, I&apos;m all ears!👂 Let&apos;s chat! 🎉</p>
+                    <p className="text-gray-400 mb-4 text-sm md:text-base">Feel free to reach out for new opportunities, collaborations, or inquiries. I look forward to connecting with you.</p>
 
                     <form onSubmit={handleSubmit} className="flex flex-col gap-4 rounded-xl">
                         <input onChange={handleChange} required value={values.name} name="name" type="text" placeholder='Full Name *' className="outline-none bg-gray-100 dark:bg-grey-800 placeholder-gray-400 rounded-lg py-3 px-4" />
                         <input onChange={handleChange} required value={values.email} name="email" type="email" placeholder='Email *' className="outline-none bg-gray-100 dark:bg-grey-800 placeholder-gray-400 rounded-lg py-3 px-4" />
                         <textarea onChange={handleChange} required value={values.message} name="message" rows={4} placeholder='Message *' className="outline-none resize-none bg-gray-100 dark:bg-grey-800 placeholder-gray-400 rounded-lg py-3 px-4" />
-                        <button disabled={loading} className="px-4 py-2 bg-violet-600 hover:bg-violet-700 transition-colors text-white rounded-lg disabled:cursor-not-allowed self-end">
-                            {loading ? <span className="flex items-center gap-2">Sending... <BiLoaderAlt className="animate-spin" /></span> : "Say Hello 👋"}
+                        <button disabled={loading} className="px-5 py-2.5 bg-violet-600 hover:bg-violet-700 transition-colors text-white font-medium rounded-lg disabled:cursor-not-allowed self-end">
+                            {loading ? <span className="flex items-center gap-2">Sending... <BiLoaderAlt className="animate-spin" /></span> : "Send Message"}
                         </button>
                     </form>
                 </div>
