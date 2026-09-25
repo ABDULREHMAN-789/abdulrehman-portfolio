@@ -4,19 +4,12 @@ import Link from "next/link"
 import { FaGithub, FaVideo } from "react-icons/fa"
 import { BiLinkExternal } from "react-icons/bi"
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 
-const cardVariants = {
-    hidden: { y: 50, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.6, ease: 'easeInOut' } }
-};
+interface ProjectCardProps extends project {
+    index?: number
+}
 
-const Project = ({ name, image, category, techstack, tools, role, description, links, code, demo }: project) => {
-
-    const [ref, inView] = useInView({
-        threshold: 0.2,
-        triggerOnce: true
-    });
+const Project = ({ name, image, category, techstack, tools, role, description, links, code, demo, index = 0 }: ProjectCardProps) => {
 
     const visitUrl = links?.visit || demo;
     const codeUrl = links?.code || code;
@@ -26,11 +19,11 @@ const Project = ({ name, image, category, techstack, tools, role, description, l
 
     return (
         <motion.div
-            ref={ref}
-            variants={cardVariants}
-            initial='hidden'
-            animate={inView ? 'visible' : 'hidden'}
-            className="flex flex-col gap-2 bg-white dark:bg-grey-800 rounded-lg p-4 justify-between h-full">
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.15 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="flex flex-col gap-2 bg-white dark:bg-grey-800 rounded-lg p-4 justify-between h-full shadow-sm hover:shadow-md transition-shadow">
 
             <div>
                 <div className="relative group rounded-lg bg-violet-50 dark:bg-grey-900 overflow-hidden">

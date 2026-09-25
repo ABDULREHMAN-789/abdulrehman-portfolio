@@ -39,9 +39,17 @@ const Projects = ({ projectsData }: Props) => {
             <h2 className="text-4xl text-center">Projects</h2>
 
             {uniqueCategories.length > 0 && (
-                <div className="overflow-x-auto scroll-hide md:w-full max-w-screen-sm mx-auto mt-6 flex justify-between items-center gap-2 md:gap-3 bg-white dark:bg-grey-800 p-2 rounded-md">
+                <div className="overflow-x-auto scroll-hide w-full sm:w-fit max-w-full mx-auto mt-6 flex flex-nowrap items-center justify-start sm:justify-center gap-2 md:gap-3 bg-white dark:bg-grey-800 p-1.5 md:p-2 rounded-lg border border-gray-100 dark:border-grey-700/50 shadow-sm">
                     {categories.map((c: string = "", i: number) => (
-                        <span key={i} onClick={() => filterProjects(c)} className={`p-1.5 md:p-2 w-full text-sm md:text-base text-center capitalize rounded-md ${category.toLowerCase() === c.toLowerCase() ? "bg-violet-600 text-white" : "hover:bg-gray-100 hover:dark:bg-grey-900"} cursor-pointer transition-all`}>
+                        <span
+                            key={i}
+                            onClick={() => filterProjects(c)}
+                            className={`whitespace-nowrap shrink-0 px-3.5 py-1.5 md:px-5 md:py-2 text-sm md:text-base text-center capitalize rounded-md font-medium transition-all cursor-pointer select-none ${
+                                category.toLowerCase() === c.toLowerCase()
+                                    ? "bg-violet-600 text-white shadow-sm"
+                                    : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 hover:dark:bg-grey-900"
+                            }`}
+                        >
                             {c}
                         </span>
                     ))}
@@ -50,7 +58,7 @@ const Projects = ({ projectsData }: Props) => {
 
             <div className="md:mx-6 lg:mx-auto lg:w-5/6 2xl:w-3/4 my-4 md:my-8 mx-auto grid md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-10">
                 {filteredProjects.slice(0, viewAll ? filteredProjects.length : 9).map((p: project, i: number) => (
-                    <ProjectCard key={i} {...p} />
+                    <ProjectCard key={p.id || i} {...p} index={i} />
                 ))}
             </div>
 
